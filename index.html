@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorm Options</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico" type="image/x-icon"> <!-- Add this line for the favicon -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .dropdown {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #35424a;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1e272e;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #35424a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dorm Options</h1>
+    </header>
+    <main>
+        <div class="dropdown">
+            <label for="dorm-options">Select a Dorm Type:</label>
+            <select id="dorm-options">
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="triple">Triple</option>
+                <option value="suite">Suite</option>
+                <option value="apartment">Apartment</option>
+            </select>
+        </div>
+        <button id="continue-btn">Continue</button>
+        <div id="result"></div>
+    </main>
+    <script>
+        document.getElementById('continue-btn').addEventListener('click', function() {
+            var selectedOption = document.getElementById('dorm-options').value;
+            if (selectedOption === 'single') {
+                window.location.href = 'single.html';
+            } else if (selectedOption === 'double') {
+                window.location.href = 'double.html';
+            } else if (selectedOption === 'triple') {
+                // Add logic for triple option if needed
+            } else if (selectedOption === 'suite') {
+                // Add logic for suite option if needed
+            } else if (selectedOption === 'apartment') {
+                // Add logic for apartment option if needed
+            }
+        });
+    </script>
+</body>
+</html>

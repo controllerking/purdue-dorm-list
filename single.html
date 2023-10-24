@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Room Options and Costs</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Added a separate CSS file -->
+    <link rel="icon" href="icon.ico" type="image/x-icon"> <!-- Added favicon link -->
+</head>
+
+<body>
+    <header>
+        <h1>Single Room Options and Costs</h1>
+    </header>
+
+    <div class="container">
+        <table id="roomTable">
+            <thead>
+                <tr>
+                    <th>Dorm Name</th>
+                    <th>Room Description</th>
+                    <th>Room Rate (Academic Year)</th>
+                    <th>AC</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CARY QUADRANGLE SOUTH</td>
+                    <td>Small Single</td>
+                    <td>$5,956</td>
+                    <td>No</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>CARY QUADRANGLE SOUTH</td>
+                    <td>Single</td>
+                    <td>$6,856</td>
+                    <td>No</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>CARY QUADRANGLE</td>
+                    <td>Single w/shrd bath</td>
+                    <td>$9,134</td>
+                    <td>Yes</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>FIRST STREET TOWERS</td>
+                    <td>Single w/priv bath</td>
+                    <td>$9,500</td>
+                    <td>Yes</td>
+                    <td>Coed</td>
+                </tr>
+                <tr>
+                    <td>HAWKINS HALL</td>
+                    <td>Single</td>
+                    <td>$5,538</td>
+                    <td>Yes</td>
+                    <td>Coed</td>
+                </tr>
+                <tr>
+                    <td>HAWKINS HALL</td>
+                    <td>Single w/priv bath</td>
+                    <td>$6,874</td>
+                    <td>Yes</td>
+                    <td>Coed</td>
+                </tr>
+                <tr>
+                    <td>HAWKINS HALL</td>
+                    <td>Single w/shower</td>
+                    <td>$6,874</td>
+                    <td>Yes</td>
+                    <td>Coed</td>
+                </tr>
+                <tr>
+                    <td>HILLENBRAND HALL</td>
+                    <td>Single w/shrd bath</td>
+                    <td>$9,134</td>
+                    <td>Yes</td>
+                    <td>Coed</td>
+                </tr>
+                <tr>
+                    <td>MEREDITH HALL</td>
+                    <td>Small Single</td>
+                    <td>$5,956</td>
+                    <td>No</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>MEREDITH HALL</td>
+                    <td>Single</td>
+                    <td>$6,856</td>
+                    <td>No</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>MEREDITH SOUTH HALL</td>
+                    <td>Single</td>
+                    <td>$9,134</td>
+                    <td>Yes</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>MEREDITH SOUTH HALL</td>
+                    <td>Single w/ priv bath</td>
+                    <td>$9,500</td>
+                    <td>Yes</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>SHREVE HALL</td>
+                    <td>Single</td>
+                    <td>$6,856</td>
+                    <td>Yes</td>
+                    <td>Coed</td>
+                </tr>
+                <tr>
+                    <td>TARKINGTON HALL</td>
+                    <td>Single w/ Bath</td>
+                    <td>$7,638</td>
+                    <td>No</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>WINDSOR HALLS</td>
+                    <td>Single</td>
+                    <td>$7,638</td>
+                    <td>Yes</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>WINDSOR HALLS</td>
+                    <td>Single w/ Bath</td>
+                    <td>$9,134</td>
+                    <td>Yes</td>
+                    <td>Female</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#roomTable').DataTable({
+                "pageLength": 25
+            });
+        });
+    </script>
+</body>
+
+</html>
