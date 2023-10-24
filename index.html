@@ -77,7 +77,8 @@
             <select id="dorm-options">
                 <option value="single">Single</option>
                 <option value="double">Double</option>
-                <option value="triple">Triple</option>
+                <option value="triple">Triple</option>'
+				<option value="quad">Quad</option>
                 <option value="suite">Suite</option>
                 <option value="apartment">Apartment</option>
             </select>
@@ -93,9 +94,11 @@
             } else if (selectedOption === 'double') {
                 window.location.href = 'double.html';
             } else if (selectedOption === 'triple') {
-                // Add logic for triple option if needed
+                window.location.href = 'triple.html';
             } else if (selectedOption === 'suite') {
-                // Add logic for suite option if needed
+                window.location.href = 'suite.html';
+            } else if (selectedOption === 'quad') {
+                window.location.href = 'quad.html';
             } else if (selectedOption === 'apartment') {
                 // Add logic for apartment option if needed
             }
